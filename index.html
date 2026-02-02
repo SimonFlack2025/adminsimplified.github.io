@@ -16,7 +16,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 50px 20px;
     }
@@ -27,7 +27,7 @@
     }
 
     h2 {
-      margin-top: 70px;
+      margin-top: 60px;
       margin-bottom: 20px;
     }
 
@@ -62,12 +62,19 @@
     }
 
     .process-box {
-      margin-top: 30px;
-      padding: 40px;
+      margin-top: 50px;
+      padding: 50px;
       background: #eeeeee;
       text-align: center;
       color: #555;
       font-style: italic;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 70px;
     }
 
     .cta {
@@ -84,6 +91,12 @@
       margin-top: 100px;
       font-size: 0.9rem;
       color: #666;
+    }
+
+    @media (max-width: 800px) {
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -134,42 +147,47 @@
     (Data → Document → Email → Recipient)
   </div>
 
-  <!-- THE PROBLEM -->
-  <h2>The problem</h2>
-  <ul>
-    <li>Manual email personalisation</li>
-    <li>Risk of incorrect attachments</li>
-    <li>Re-checking under time pressure</li>
-    <li>Repetitive admin draining focus</li>
-    <li>Errors caused by copy and paste</li>
-  </ul>
+  <!-- TWO COLUMN DETAIL SECTION -->
+  <div class="two-columns">
 
-  <!-- THE SOLUTION -->
-  <h2>The solution</h2>
-  <ul>
-    <li>Batch personalised emails</li>
-    <li>Correct attachments matched automatically</li>
-    <li>Documents generated from Word templates</li>
-    <li>Predictable, repeatable workflows</li>
-  </ul>
+    <div>
+      <h2>The problem</h2>
+      <ul>
+        <li>Manual email personalisation</li>
+        <li>Risk of incorrect attachments</li>
+        <li>Re-checking under time pressure</li>
+        <li>Repetitive admin draining focus</li>
+        <li>Errors caused by copy and paste</li>
+      </ul>
 
-  <!-- HOW IT WORKS -->
-  <h2>How it works</h2>
-  <ol>
-    <li>Your data is managed in Excel</li>
-    <li>Documents are created from templates</li>
-    <li>Emails are sent in controlled batches via Outlook</li>
-  </ol>
+      <h2>The solution</h2>
+      <ul>
+        <li>Batch personalised emails</li>
+        <li>Correct attachments matched automatically</li>
+        <li>Documents generated from Word templates</li>
+        <li>Predictable, repeatable workflows</li>
+      </ul>
+    </div>
 
-  <!-- WHY THIS WORKS -->
-  <h2>Why this works well</h2>
-  <ul>
-    <li>Runs entirely within Microsoft Office</li>
-    <li>No additional software to install</li>
-    <li>Internal, controlled automation</li>
-    <li>Suitable for regulated environments</li>
-    <li>Designed to reduce operational risk</li>
-  </ul>
+    <div>
+      <h2>How it works</h2>
+      <ol>
+        <li>Your data is managed in Excel</li>
+        <li>Documents are created from templates</li>
+        <li>Emails are sent in controlled batches via Outlook</li>
+      </ol>
+
+      <h2>Why this works well</h2>
+      <ul>
+        <li>Runs entirely within Microsoft Office</li>
+        <li>No additional software to install</li>
+        <li>Internal, controlled automation</li>
+        <li>Suitable for regulated environments</li>
+        <li>Designed to reduce operational risk</li>
+      </ul>
+    </div>
+
+  </div>
 
   <!-- WHO THIS HELPS -->
   <h2>Who this helps</h2>
